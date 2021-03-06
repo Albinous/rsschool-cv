@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, **::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  color: #697784;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background: #EAF2F9;
+  padding-top: 84px;
+  padding-bottom: 94px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__pic {
+  margin-right: 93px;
+}
+
+.header__title {
+  font-size: 53px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.header__subtitle {
+  color: rgba(0,0,0, 0.7);
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+
+.header__text {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.35;
+  max-width: 532px;
+}
+
+.cv {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.cv__group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv__title {
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cv__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 115px;
+  height: 5px;
+  background: #DEAB98;
+}
+
+.cv__skills {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.cv__skills-text {
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.cv__text {
+  max-width: 393px;
+  line-height: 1.35;
+  margin-bottom: 30px;
+}
+
+.cv__text span {
+  font-weight: 500;
+}
+
+.cv__experience {
+  margin-bottom: 55px;
+}
+
+.cv__english {
+  margin-bottom: 55px;
+}
+
+.cv__contact-text {
+  line-height: 1.68;
+}
