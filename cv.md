@@ -3,7 +3,9 @@
 ## Contact: 
 __Phone Number__: *87789307867*
 __E-mail__: *albina200235@gmail.com*
+
 ---
+
 At the moment I am 18 years old and studying at the 2nd year at the University of Suleyman Demirel University, specializing in physics-informatics. I have been fond of programming for over 1.5 years. In addition, I like playing the ukulele, taking time for myself, developing and figure skating. I am a demanding and responsible person, but at the same time very sociable.
 ---
 __Skills:__ * HTML
