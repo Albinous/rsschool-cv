@@ -87,7 +87,7 @@ body {
 
 .cv__skills {
   display: flex;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 }
 
 .cv__skills-text {
@@ -115,4 +115,20 @@ body {
 
 .cv__contact-text {
   line-height: 1.68;
+}
+
+.footer {
+  background: #EAF2F9;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+}
+
+.footer__item-link {
+  color: #000;
+  text-decoration: none;
 }
