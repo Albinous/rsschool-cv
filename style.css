@@ -9,6 +9,7 @@
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.2;
+  color: #383838;
 }
 
 h1,
@@ -21,6 +22,7 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  color: #000;
 }
 
 h1 {
@@ -29,6 +31,10 @@ h1 {
 
 h3 {
   font-weight: 600;
+}
+
+p {
+  line-height: 1.5;
 }
 
 ul {
@@ -42,7 +48,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #383838;
 }
 
 section {
@@ -108,4 +114,35 @@ section {
 
 .nav-menu__link:hover {
   color: #191b50;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction {
+  max-width: 50%;
+}
+
+.introduction-text {
+  font-size: 14px;
+  padding: 5px 0 5px 30px;
+  position: relative;
+}
+
+.introduction-text::before {
+  content: "";
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
