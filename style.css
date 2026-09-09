@@ -164,3 +164,50 @@ section {
   align-items: center;
   justify-content: center;
 }
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.education-item__title {
+  color: #191b50;
+}
+
+.education-item__subtitle {
+  font-weight: 400;
+}
+
+.main-right {
+  position: relative;
+  padding-left: 100px;
+}
+
+.main-right::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 1px;
+  height: 90%;
+  background-color: #000;
+}
+
+.certificate-img {
+  width: 500px;
+}
+
+.languages {
+  padding-top: 0;
+}
+
+.languages-item {
+  margin-top: 10px;
+}
