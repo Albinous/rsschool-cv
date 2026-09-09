@@ -33,6 +33,10 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  font-weight: 400;
+}
+
 p {
   line-height: 1.5;
 }
@@ -181,10 +185,6 @@ section {
   color: #191b50;
 }
 
-.education-item__subtitle {
-  font-weight: 400;
-}
-
 .main-right {
   position: relative;
   padding-left: 100px;
@@ -210,4 +210,63 @@ section {
 
 .languages-item {
   margin-top: 10px;
+}
+
+.experience {
+  max-width: 50%;
+}
+
+.experience-items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.experience-items::before {
+  content: "";
+  background-color: #191b50;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.experience-item::before {
+  content: "";
+  background-color: #191b50;
+  position: absolute;
+  top: 7px;
+  left: -34px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.experience-job {
+  letter-spacing: 1px;
+  color: #191b50;
+}
+
+.experience-company {
+  letter-spacing: 0;
+}
+
+.experience-list {
+  padding-left: 20px;
+  list-style: circle;
+  font-size: 16px;
+}
+
+.experience-list__item {
+  margin-bottom: 10px;
 }
