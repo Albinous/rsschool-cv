@@ -53,6 +53,7 @@ img {
 a {
   text-decoration: none;
   color: #383838;
+  transition: 0.2s ease;
 }
 
 section {
@@ -110,10 +111,6 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.nav-menu__link {
-  transition: 0.3s ease;
 }
 
 .nav-menu__link:hover {
@@ -197,7 +194,7 @@ section {
   left: 0;
   width: 1px;
   height: 90%;
-  background-color: #000;
+  background-color: #555;
 }
 
 .certificate-img {
@@ -214,6 +211,17 @@ section {
 
 .experience {
   max-width: 50%;
+  position: relative;
+}
+
+.experience::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 1px;
+  height: 90%;
+  background-color: #555;
 }
 
 .experience-items {
@@ -269,4 +277,35 @@ section {
 
 .experience-list__item {
   margin-bottom: 10px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.projects-list__item {
+  position: relative;
+  padding-left: 15px;
+}
+
+.projects-list__item::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.projects-list__link {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.projects-list__link:hover {
+  color: #191b50;
 }
