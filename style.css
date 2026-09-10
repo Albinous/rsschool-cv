@@ -56,6 +56,10 @@ a {
   transition: 0.2s ease;
 }
 
+a:hover {
+  color: #191b50;
+}
+
 section {
   padding: 50px 0;
 }
@@ -113,10 +117,6 @@ section {
   align-items: center;
 }
 
-.nav-menu__link:hover {
-  color: #191b50;
-}
-
 .main-info {
   display: flex;
   justify-content: space-between;
@@ -145,7 +145,18 @@ section {
 .contacts-list {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+}
+
+.contacts-list__item {
+  display: flex;
+  align-items: center;
   gap: 10px;
+}
+
+.contacts-list__icon {
+  width: 24px;
+  height: 24px;
 }
 
 .skills-list {
@@ -304,8 +315,4 @@ section {
 .projects-list__link {
   font-size: 17px;
   font-weight: 700;
-}
-
-.projects-list__link:hover {
-  color: #191b50;
 }
