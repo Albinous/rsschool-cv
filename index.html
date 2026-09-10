@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RS School CV</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -271,9 +275,23 @@
               </li>
             </ul>
           </section>
-          <section class="code"></section>
         </div>
+        <section class="code">
+          <h2 class="section-title">Code example</h2>
+          <p class="code-info">Codewars, 4 kyu</p>
+          <pre><code class="language-javascript">
+              function curryPartial(fn, ...args) {
+                if (args.length >= fn.length) {
+                    return fn(...args)
+                  } else {
+                    return (...rest) => curryPartial(fn, ...args, ...rest)
+                  }
+                }
+            </code></pre>
+        </section>
       </div>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   </body>
 </html>
