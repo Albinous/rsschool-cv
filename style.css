@@ -66,7 +66,7 @@ section {
 
 .container {
   max-width: 1200px;
-  padding: 15px 0;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -115,6 +115,7 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-info {
@@ -209,7 +210,7 @@ section {
 }
 
 .certificate-img {
-  width: 500px;
+  max-width: 500px;
 }
 
 .languages {
@@ -342,4 +343,94 @@ section {
 
 .footer a {
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 25px 0;
+  }
+
+  .section-line.hide {
+    display: none;
+  }
+
+  .header-wrapper {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .header-info {
+    text-align: center;
+  }
+
+  .header-title__surname {
+    font-size: 20px;
+  }
+
+  .header-title {
+    font-size: 35px;
+  }
+
+  .header-subtitle {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .main-info {
+    flex-direction: column;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .contacts-list {
+    gap: 8px;
+  }
+
+  .introduction {
+    max-width: 100%;
+  }
+
+  .introduction-text {
+    padding: 0;
+  }
+
+  .introduction-text::before {
+    opacity: 0;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+
+  .experience {
+    max-width: 100%;
+  }
+
+  .experience::after {
+    opacity: 0;
+  }
+
+  .projects {
+    padding-left: 0;
+  }
+
+  .main-right {
+    padding-left: 0;
+  }
+
+  .main-right::before {
+    opacity: 0;
+  }
+
+  .code pre,
+  .code code {
+    margin: 0;
+    padding: 0;
+  }
 }

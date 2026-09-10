@@ -25,7 +25,7 @@
             alt="avatar"
           />
         </div>
-        <div class="section-line"></div>
+        <div class="section-line hide"></div>
         <nav class="nav">
           <ul class="nav-menu">
             <li class="nav-menu__item">
@@ -54,7 +54,7 @@
             </li>
           </ul>
         </nav>
-        <div class="section-line"></div>
+        <div class="section-line hide"></div>
       </div>
     </header>
 
@@ -332,15 +332,14 @@
         <section class="code">
           <h2 class="section-title">Code example</h2>
           <p class="code-info">Codewars, 4 kyu</p>
-          <pre><code class="language-javascript">
-              function curryPartial(fn, ...args) {
+          <pre><code class="language-javascript">function curryPartial(fn, ...args) {
                 if (args.length >= fn.length) {
                     return fn(...args)
                   } else {
                     return (...rest) => curryPartial(fn, ...args, ...rest)
                   }
                 }
-            </code></pre>
+          </code></pre>
         </section>
       </div>
     </main>
