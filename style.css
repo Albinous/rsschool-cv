@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.2;
+  color: #383838;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #000;
+}
+
+h1 {
+  letter-spacing: 10px;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #383838;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: #191b50;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-line {
+  width: 100%;
+  height: 1px;
+  background: #555;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 40px;
+}
+
+.header-title__surname {
+  font-weight: 300;
+}
+
+.header-title {
+  font-size: 60px;
+  color: #191b50;
+}
+
+.header-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.nav {
+  padding: 20px 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction {
+  max-width: 50%;
+}
+
+.introduction-text {
+  font-size: 14px;
+  padding: 5px 0 5px 30px;
+  position: relative;
+}
+
+.introduction-text::before {
+  content: "";
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacts-list__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts-list__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.skills-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list__item {
+  width: 150px;
+  height: 50px;
+  background-color: #191b50;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.education-item__title {
+  color: #191b50;
+}
+
+.main-right {
+  position: relative;
+  padding-left: 100px;
+}
+
+.main-right::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 1px;
+  height: 90%;
+  background-color: #555;
+}
+
+.certificate-img {
+  max-width: 500px;
+}
+
+.languages {
+  padding-top: 0;
+}
+
+.languages-item {
+  margin-top: 10px;
+}
+
+.experience {
+  max-width: 50%;
+  position: relative;
+}
+
+.experience::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 1px;
+  height: 90%;
+  background-color: #555;
+}
+
+.experience-items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.experience-items::before {
+  content: "";
+  background-color: #191b50;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.experience-item::before {
+  content: "";
+  background-color: #191b50;
+  position: absolute;
+  top: 7px;
+  left: -34px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.experience-job {
+  letter-spacing: 1px;
+  color: #191b50;
+}
+
+.experience-company {
+  letter-spacing: 0;
+}
+
+.experience-list {
+  padding-left: 20px;
+  list-style: circle;
+  font-size: 16px;
+}
+
+.experience-list__item {
+  margin-bottom: 10px;
+}
+
+.projects {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.projects-list__item {
+  position: relative;
+  padding-left: 15px;
+}
+
+.projects-list__item::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.projects-list__link {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #191b50;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .header-title {
+    font-size: 35px;
+  }
+
+  .header-title__surname {
+    font-size: 18px;
+  }
+
+  .header-subtitle {
+    font-size: 12px;
+  }
+
+  .experience,
+  .main-left {
+    padding-right: 20px;
+  }
+
+  .projects,
+  .main-right {
+    padding-left: 20px;
+  }
+
+  .certificate-img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 25px 0;
+  }
+
+  .section-line.hide {
+    display: none;
+  }
+
+  .header-wrapper {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .header-info {
+    text-align: center;
+  }
+
+  .header-title__surname {
+    font-size: 20px;
+  }
+
+  .header-title {
+    font-size: 35px;
+  }
+
+  .header-subtitle {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .main-info {
+    flex-direction: column;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .contacts-list {
+    gap: 8px;
+  }
+
+  .introduction {
+    max-width: 100%;
+  }
+
+  .introduction-text {
+    padding: 0;
+  }
+
+  .introduction-text::before {
+    opacity: 0;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+
+  .experience {
+    max-width: 100%;
+  }
+
+  .experience::after {
+    opacity: 0;
+  }
+
+  .projects {
+    padding-left: 0;
+  }
+
+  .main-right {
+    padding-left: 0;
+  }
+
+  .main-right::before {
+    opacity: 0;
+  }
+
+  .code pre,
+  .code code {
+    margin: 0;
+    padding: 0;
+  }
+}
